@@ -14,7 +14,7 @@ library(broom)
 ```
 
 
-##PROBLEM 2
+PROBLEM 2
 ```{r}
 #writing function
 sim_mean_sd = function(mu, iterations = 5000) {
@@ -82,7 +82,9 @@ plot3 = mu_rejected %>%
   geom_point() +
   geom_line() 
 ```
-The sample average is not equal to the true mu. 
+Is the sample average of 𝜇̂ across tests for which the null is rejected approximately equal to the true value of 𝜇? Why or why not?
+The sample average is only approximately equal to the true value of mu for mu = 4, 5, and 6. This could be because of the mu hat estimates when the null is rejected -- as the effect size increases, the null is more likely to be rejected (as we saw in the previous graph). Therefore, there could be a greater "sample size" of mu hats, and greater sample size means the average of the estimates will be closer to the true mu.
+
 
 
 PROBLEM 3
